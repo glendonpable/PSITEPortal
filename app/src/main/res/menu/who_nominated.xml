@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DrawerMainAdapter">
+
+    <item
+        android:id="@+id/who_nominated"
+        android:orderInCategory="100"
+        android:title="Who nominated me?"
+        app:showAsAction="never" />
+</menu>

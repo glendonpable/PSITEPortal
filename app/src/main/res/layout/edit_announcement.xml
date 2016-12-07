@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textStyle="bold"
+                android:text="Title*"
+                android:id="@+id/textView9" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/item_margin"/>-->
+            <!--<include layout="@layout/item_margin" />-->
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:id="@+id/edit_editText_title"
+            android:hint="Title"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="6dp"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textStyle="bold"
+                android:text="Details*"
+                android:id="@+id/textView10" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/item_margin"/>-->
+            <!--<include layout="@layout/item_margin" />-->
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:id="@+id/edit_editText_details"
+            android:hint="Details"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="6dp"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textStyle="bold"
+                android:text="Venue"
+                android:id="@+id/textView11" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/item_margin"/>-->
+            <!--<include layout="@layout/item_margin" />-->
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:id="@+id/edit_editText_venue"
+            android:hint="Venue"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="6dp"
+            android:textSize="18sp"/>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="5dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearance"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Date"-->
+                <!--android:id="@+id/textView12" />-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/item_margin"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<include layout="@layout/item_margin" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:weightSum="2">-->
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_edittext"-->
+                <!--android:id="@+id/edit_txt_announcementDate"-->
+                <!--android:hint="Date"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:textSize="18sp"/>-->
+
+            <!--<ImageButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/calendar_time_icon"-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/edit_selectAnnouncementDate"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="5dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearance"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Time"-->
+                <!--android:id="@+id/textView13" />-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/item_margin"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<include layout="@layout/item_margin" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:weightSum="2">-->
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/shape_edittext"-->
+                <!--android:id="@+id/edit_txt_announcementTime"-->
+                <!--android:hint="Time"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:paddingLeft="6dp"-->
+                <!--android:textSize="18sp"/>-->
+
+            <!--<ImageButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/calendar_time_icon"-->
+                <!--android:background="@null"-->
+                <!--android:id="@+id/edit_selectAnnouncementTime"/>-->
+        <!--</LinearLayout>-->
+        <Button
+            android:id="@+id/edit_announcementBtnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save changes"
+            android:background="@color/colorAccent"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/info_margin">
+
+        <ImageView
+            android:id="@+id/ivContactItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/info_margin"
+            android:layout_marginRight="@dimen/info_margin"
+            android:src="@drawable/ic_school_black_24dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_toEndOf="@id/ivContactItem1"
+            android:layout_toRightOf="@id/ivContactItem1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
+            android:hint="Institution" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivContactItem1"
+            android:layout_toRightOf="@id/ivContactItem1"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/info_margin">
+
+        <ImageView
+            android:id="@+id/ivContactItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/info_margin"
+            android:layout_marginRight="@dimen/info_margin"
+            android:src="@drawable/ic_schedule_black_24dp" />
+
+        <TextView
+            android:id="@+id/nomination_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_toEndOf="@id/ivContactItem2"
+            android:layout_toRightOf="@id/ivContactItem2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
+            android:hint="Institution" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomination_date_time"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivContactItem2"
+            android:layout_toRightOf="@id/ivContactItem2"
+            android:text="Nomination Date &amp; Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/info_margin">
+
+        <ImageView
+            android:id="@+id/ivContactItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/info_margin"
+            android:layout_marginRight="@dimen/info_margin"
+            android:src="@drawable/ic_schedule_black_24dp" />
+
+        <TextView
+            android:id="@+id/election_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_toEndOf="@id/ivContactItem3"
+            android:layout_toRightOf="@id/ivContactItem3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
+            android:hint="Institution" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/election_date_time"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivContactItem3"
+            android:layout_toRightOf="@id/ivContactItem3"
+            android:text="Election Date &amp; Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/info_margin">
+
+        <ImageView
+            android:id="@+id/ivContactItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/info_margin"
+            android:layout_marginRight="@dimen/info_margin"
+            android:src="@drawable/ic_help_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/nomination_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_toEndOf="@id/ivContactItem4"
+            android:layout_toRightOf="@id/ivContactItem4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
+            android:hint="Institution" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomination_status"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivContactItem4"
+            android:layout_toRightOf="@id/ivContactItem4"
+            android:text="Nomination Status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="@dimen/info_margin">
+
+        <ImageView
+            android:id="@+id/ivContactItem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/info_margin"
+            android:layout_marginRight="@dimen/info_margin"
+            android:src="@drawable/ic_help_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/election_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_toEndOf="@id/ivContactItem5"
+            android:layout_toRightOf="@id/ivContactItem5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#212121"
+            android:hint="Institution" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/election_status"
+            android:layout_marginLeft="@dimen/info_margin"
+            android:layout_marginStart="@dimen/info_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivContactItem5"
+            android:layout_toRightOf="@id/ivContactItem5"
+            android:text="Election Status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#727272" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_divider" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffff"
+        android:background="@color/colorAccent" />
+
+</LinearLayout>

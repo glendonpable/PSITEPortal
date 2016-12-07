@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/view_listings"
+        android:orderInCategory="200"
+        android:title="View Listings"
+        android:icon="@drawable/ic_listings"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/summary_report"
+        android:orderInCategory="300"
+        android:title="Summary Report"
+        android:icon="@drawable/ic_summary"
+        app:showAsAction="never" />
+
+</menu>

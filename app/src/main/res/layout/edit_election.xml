@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convention"
+                android:id="@+id/convention"
+                android:paddingTop="10dp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/convention"
+                android:background="@drawable/shape_edittext"
+                android:id="@+id/convention_spinner">
+
+            </Spinner>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomination Date"
+                android:id="@+id/nom_date"
+                android:layout_below="@id/convention_spinner"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_nom_date"
+                android:layout_below="@id/nom_date"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomination Start Time"
+                android:id="@+id/nom_start_time"
+                android:layout_below="@id/edit_text_nom_date"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_nom_start_time"
+                android:layout_below="@id/nom_start_time"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomination End Time"
+                android:id="@+id/nom_end_time"
+                android:layout_below="@id/edit_text_nom_start_time"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_nom_end_time"
+                android:layout_below="@id/nom_end_time"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Election Date"
+                android:id="@+id/elect_date"
+                android:layout_below="@+id/edit_text_nom_end_time"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_elect_date"
+                android:layout_below="@id/elect_date"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Election Start Time"
+                android:id="@+id/elect_start_time"
+                android:layout_below="@id/edit_text_elect_date"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_elect_start_time"
+                android:layout_below="@id/elect_start_time"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Election End Time"
+                android:id="@+id/elect_end_time"
+                android:layout_below="@id/edit_text_elect_start_time"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_elect_end_time"
+                android:layout_below="@id/elect_end_time"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue"
+                android:id="@+id/election_venue"
+                android:layout_below="@id/edit_text_elect_end_time"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_elect_venue"
+                android:layout_below="@id/election_venue"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"/>
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number to vote"
+                android:id="@+id/num_to_vote"
+                android:layout_below="@id/edit_text_elect_venue"
+                android:paddingTop="10dp"/>
+
+            <EditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text_num_to_vote"
+                android:layout_below="@id/num_to_vote"
+                android:background="@drawable/shape_edittext"
+                android:paddingTop="6dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:textSize="18sp"/>
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"/>-->
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/btnEdit"
+            android:layout_gravity="center_horizontal" />
+        <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/calendar_time_icon"-->
+        <!--android:background="@null"-->
+        <!--android:id="@+id/selectAnnouncementTime"/>-->
+    </LinearLayout>
+
+</ScrollView>

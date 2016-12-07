@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_photo"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_add_photo"
+        android:title="Add Photo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_liquidate"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_receipt"
+        android:title="Liquidation"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_view_users"
+        android:orderInCategory="400"
+        android:icon="@drawable/ic_group"
+        android:title="View Users"
+        app:showAsAction="never|withText"/>
+
+    <item
+        android:id="@+id/action_configurations"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/action_configuration"
+        app:showAsAction="never|withText" />
+
+</menu>
